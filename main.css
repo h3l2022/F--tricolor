@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    padding: 16px 0;
+} 
+
+.container nav li {
+   float: left;
+   list-style: none;
+   padding: 8px;
+} 
+
+.container nav li a {
+   text-decoration: none;
+   color: white;
+}
+
+ .container {
+   display: flex;
+    width: 90%;
+    margin-left: 25px; 
+    justify-content: space-between;
+ } 
+
+ .container h2 {
+   border-bottom: solid black;
+   color: red;
+ }
+
+ .container img {
+height: 300px;
+margin-top: 8px;
+margin-right: 8px;
+ }
+
+ .produtos {
+    padding: 24px 0;
+ }
+
+.produtos h2 {
+   margin-bottom: 16px;
+   color: red;
+   border-bottom: solid #000;
+ }
+
+.produtos {
+   margin-bottom: 8px;
+ }
+
+.compras {
+   max-width: 100%;
+   display: flex;
+   padding: 2px;
+}
+
+
+.compras h3 {
+   font-size: 20px;
+   background-color: red;
+   color: white;
+   padding: 8px;
+}
+.compras p {
+   padding: 8px;
+   margin-top: 5px;
+   font-size: 15px;
+   background-color: #000;
+   color: white;
+}
+
+button {
+   font-size: 15px;
+   background-color: blue;
+   color: white;
+   width: 250px;
+   padding: 8px;
+}
+
+@media screen  and (max-width:767px) {
+   header {
+      background-color: red;
+      color: white;
+      font-size: 24px;
+      height: 120px;
+      width: 100%;
+   }  
+
+   .container li a {
+   display: inline;
+   color: white;
+   }
+
+   .container h2 {
+   padding-bottom: 5px;
+  
+   font-size: 20px;
+   border-bottom: solid black;
+   color: red;
+      }
+     
+     .container img {
+        padding: 16px;
+        height: 300px;
+        width: 100%;
+      }
+      
+      section .container {
+         display: block;
+         padding: 4px;
+      }
+     
+      .produtos {
+         margin-left: 8px;
+         padding: 35px 0;
+      }
+     
+     .produtos h2 {
+        margin-bottom: 16px;
+        color: red;
+        border-bottom: solid #000;
+      }
+     
+     .produtos {
+        margin-bottom: 8px;
+      }
+     
+     .compras {
+        max-width: 100%;
+        padding: 35px;
+        display: block;
+     }
+
+     .compras img {
+      padding-left: 16px;
+     }
+     
+     .compras h3 {
+      width: 250px;
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        padding: 8px;
+     }
+
+     .compras p {
+        padding: 8px;
+        width: 250px;
+        font-size: 20px;
+        background-color: #000;
+        color: white;
+     }
+     
+     button {
+        font-size: 15px;
+        background-color: blue;
+        color: white;
+        width: 250px;
+        padding: 8px;
+     }
+
+     header .container  {
+      flex-direction: column;
+      padding-left: 35px;
+      align-items: center;
+   }
+
+   
+}
+
+@media screen and (min-width: 768px) {
+.container {
+      max-width: 100%;
+   }
+
+   .compras {
+      display: inline-block;
+   }
+  
+
+}
